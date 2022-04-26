@@ -55,4 +55,4 @@ tlmgr install \
 
 echo "Finish install extra packages."
 
-cd $HOME/bin && ls $HOME/.TinyTeX/bin/x86_64-*/* | xargs -n 1 ln -s -f
+cd $HOME/bin && ls $HOME/Library/TinyTeX/bin/*/* | xargs -n 1 ln -s -f
