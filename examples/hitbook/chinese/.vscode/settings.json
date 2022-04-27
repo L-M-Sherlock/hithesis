@@ -1,0 +1,120 @@
+{
+    "latex-workshop.latex.tools": [
+    
+        {
+            "name": "latexmk",
+            "command": "latexmk",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-pdf",
+                "-outdir=%OUTDIR%",
+                "%DOC%"
+            ],
+            "env": {"PATH": "/opt/homebrew/bin:/Users/jarrettye/bin:/usr/bin:/usr/bin"}
+        },
+        {
+            "name": "lualatexmk",
+            "command": "latexmk",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-lualatex",
+                "-outdir=%OUTDIR%",
+                "%DOC%"
+            ],
+            "env": {"PATH": "/opt/homebrew/bin:/Users/jarrettye/bin:/usr/bin"}
+        },
+        {
+            "name": "xelatexmk",
+            "command": "latexmk",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-xelatex",
+                "-outdir=%OUTDIR%",
+                "%DOC%"
+            ],
+            "env": {"PATH": "/opt/homebrew/bin:/Users/jarrettye/bin:/usr/bin"}
+        },
+        {
+            "name": "latexmk_rconly",
+            "command": "latexmk",
+            "args": [
+                "%DOC%"
+            ],
+            "env": {"PATH": "/opt/homebrew/bin:/Users/jarrettye/bin:/usr/bin"}
+        },
+        {
+            "name": "pdflatex",
+            "command": "pdflatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOC%"
+            ],
+            "env": {"PATH": "/opt/homebrew/bin:/Users/jarrettye/bin:/usr/bin"}
+        },
+        {
+            "name": "xelatex",
+            "command": "xelatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-output-driver=xdvipdfmx -i dvipdfmx-unsafe.cfg -q -E",
+                "%DOC%"
+            ],
+            "env": {"PATH": "/opt/homebrew/bin:/Users/jarrettye/bin:/usr/bin"}
+        },
+        {
+            "name": "bibtex",
+            "command": "bibtex",
+            "args": [
+                "%DOCFILE%"
+            ],
+            "env": {"PATH": "/opt/homebrew/bin:/Users/jarrettye/bin:/usr/bin"}
+        },
+        {
+            "name": "rnw2tex",
+            "command": "Rscript",
+            "args": [
+                "-e",
+                "knitr::opts_knit$set(concordance = TRUE); knitr::knit('%DOCFILE_EXT%')"
+            ],
+            "env": {"PATH": "/opt/homebrew/bin:/Users/jarrettye/bin:/usr/bin"}
+        },
+        {
+            "name": "jnw2tex",
+            "command": "julia",
+            "args": [
+                "-e",
+                "using Weave; weave(\"%DOC_EXT%\", doctype=\"tex\")"
+            ],
+            "env": {"PATH": "/opt/homebrew/bin:/Users/jarrettye/bin:/usr/bin"}
+        },
+        {
+            "name": "jnw2texmintex",
+            "command": "julia",
+            "args": [
+                "-e",
+                "using Weave; weave(\"%DOC_EXT%\", doctype=\"texminted\")"
+            ],
+            "env": {"PATH": "/opt/homebrew/bin:/Users/jarrettye/bin:/usr/bin"}
+        },
+        {
+            "name": "tectonic",
+            "command": "tectonic",
+            "args": [
+                "--synctex",
+                "--keep-logs",
+                "%DOC%.tex"
+            ],
+            "env": {"PATH": "/opt/homebrew/bin:/Users/jarrettye/bin:/usr/bin"}
+        }
+    ]
+}
