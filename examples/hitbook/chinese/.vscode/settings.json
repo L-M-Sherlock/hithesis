@@ -80,6 +80,15 @@
             "env": {"PATH": "/opt/homebrew/bin:/Users/jarrettye/bin:/usr/bin"}
         },
         {
+            "name": "splitindex",
+            "command": "splitindex",
+            "args": [
+                "%DOCFILE%",
+                "-- -s hithesis.ist"
+            ],
+            "env": {"PATH": "/opt/homebrew/bin:/Users/jarrettye/bin:/usr/bin"}
+        },
+        {
             "name": "rnw2tex",
             "command": "Rscript",
             "args": [
@@ -115,6 +124,20 @@
                 "%DOC%.tex"
             ],
             "env": {"PATH": "/opt/homebrew/bin:/Users/jarrettye/bin:/usr/bin"}
+        }
+    ],
+    "latex-workshop.latex.recipe.default": "lastUsed",
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "hithesis",
+            "tools": [
+                "xelatex",
+                "bibtex",
+                "xelatex",
+                "xelatex",
+                "splitindex",
+                "xelatex"
+            ]
         }
     ]
 }
