@@ -4,9 +4,9 @@
 
 \section{研究背景与意义}[Background and Significance]
 
-在学习中，记忆发挥着重要的作用。大量基本认知任务依赖于记忆，例如，学生通过阅读材料来学习时，需要从记忆中检索大量背景知识，才能理解材料内容\cite{reisbergCognitionExploringScience2019}。可以说，记忆是学习中重要的一环。艾宾浩斯在 1885 年通过定量实验分析，发现了遗忘曲线，其刻画了在没有复习的情况下，记忆随着时间衰退的现象\cite{ebbinghausMemoryContributionExperimental1913}。为了克服遗忘，传统的记忆方式是集中重复，即在短时间内大量重复一段材料。有神经科学实验表明，集中重复是一种低效的记忆方式，因为集中重复不能有效地增强神经元连接强度的长期增益效应\cite{kramarSynapticEvidenceEfficacy2012}。与集中复习不同，间隔重复是一种将复习分散到多天内进行的记忆方法。有大量记忆任务实验\cite{cepedaDistributedPracticeVerbal2006}和生物学实验\cite{smolenRightTimeLearn2016}表明，间隔重复能有效地增强长期记忆，在效果上优于集中重复。
+在学习中，记忆发挥着重要的作用。大量基本认知任务依赖于记忆，例如，学生通过阅读材料来学习时，需要从记忆中检索大量背景知识，才能理解材料内容\cite{reisbergCognitionExploringScience2019}。可以说，记忆是学习中重要的一环。Ebbinghaus在1885年通过定量实验分析，发现了遗忘曲线，其刻画了在没有复习的情况下，记忆随着时间衰退的现象\cite{ebbinghausMemoryContributionExperimental1913}。为了克服遗忘，传统的记忆方式是集中重复，即在短时间内大量重复一段材料。有神经科学实验表明，集中重复是一种低效的记忆方式，因为集中重复不能有效地增强神经元连接强度的长期增益效应\cite{kramarSynapticEvidenceEfficacy2012}。与集中复习不同，间隔重复是一种将复习分散到多天内进行的记忆方法。有大量记忆任务实验\cite{cepedaDistributedPracticeVerbal2006}和生物学实验\cite{smolenRightTimeLearn2016}表明，间隔重复能有效地增强长期记忆，在效果上优于集中重复。
 
-近年来，有大量研究表明，在间隔重复中，间隔的长短会影响记忆的效果。怎样的间隔安排是最好的，一直是该领域的热点问题。随着教育技术不断发展，间隔重复的应用范围也越来越广，特别是在在线学习平台上为学习者安排复习任务。
+近年来，有大量研究表明，在间隔重复中，间隔的长短会影响记忆的效果\cite{cepedaSpacingEffectsLearning2008,delaneySpacingTestingEffects2010}。怎样的间隔安排是最好的，一直是该领域的热点问题。随着教育技术不断发展，间隔重复的应用范围也越来越广，特别是在在线学习平台上为学习者安排复习任务。
 
 \begin{figure}[htbp]
     \setlength{\subfigcapskip}{-1bp}
@@ -69,15 +69,15 @@
 
 \subsection{遗忘曲线}[Ebbinghaus forgetting curve]
 
-艾宾浩斯关于遗忘曲线的经典研究表明，如果在首次记忆材料后不进行复习，材料就会逐渐被忘记。遗忘的程度与不进行复习的时间存在函数关系：
+Ebbinghaus关于遗忘曲线的经典研究表明，如果在首次记忆材料后不进行复习，材料就会逐渐被忘记。遗忘的程度与不进行复习的时间存在函数关系：
 \begin{equation}
 b = \frac{k}{(\log t)^c + k}
 \end{equation}
-其中，$t$是第二次记忆与第一次记忆之间间隔的时间，$b$是再次记忆时节省的时间与第一次记忆所花时间之比，这相当于第二次记忆时还保留多少第一次记忆的内容。$c$和$k$这两个参数并未明确定义，但观察其二阶导数可知，$k$越大，遗忘的速度越慢，$c$越大，遗忘的速度越快。艾宾浩斯在它的研究中尚未给出不同的记忆过程对这些参数的影响。
+其中，$t$是第二次记忆与第一次记忆之间间隔的时间，$b$是再次记忆时节省的时间与第一次记忆所花时间之比，这相当于第二次记忆时还保留多少第一次记忆的内容。$c$和$k$这两个参数并未明确定义，但观察其二阶导数可知，$k$越大，遗忘的速度越慢，$c$越大，遗忘的速度越快。Ebbinghaus在它的研究中尚未给出不同的记忆过程对这些参数的影响。
 
 \subsection{广义幂律}[Generalized power law]
 
-Wixted和Carpenter指出，回忆的概率根据作为$t$的函数的广义幂律衰减：
+Wixted和Carpenter\cite{wixtedWickelgrenPowerLaw2007}指出，回忆的概率随着时间以幂函数衰减：
 \begin{equation}
 m=\lambda(1+\beta t)^{-\Psi}
 \end{equation}
@@ -85,57 +85,65 @@ m=\lambda(1+\beta t)^{-\Psi}
 
 DASH模型通过材料的难度、学习者的能力和学习历史来估计这些参数的大小\cite{jonesPredictingImprovingMemory2016}。
 
-\subsection{陈述性记忆模型}[ACT-R]
+% \subsection{陈述性记忆模型}[ACT-R]
 
-Pavlikp和Anderson\cite{pavlikUsingModelCompute2008}使用以下模型来描述遗忘过程
-\begin{equation}
-m_n(t_{1..n}) = \beta + \ln(\sum\limits_{k=1}^n t_k^{-d_k})
-\end{equation}
-\begin{equation}
-p(m) = \frac{1}{1+e^{\frac{\tau-m}{s}}}
-\end{equation}
-其中，$m$是记忆的强度，$\beta$是材料的难度、学习者的能力，$d$是第$k$次复习时的记忆强度衰减率。$\tau$是阈值参数，$s$是控制激活中噪声的影响，描述了回忆对激活变化的敏感性。
+% Pavlikp和Anderson\cite{pavlikUsingModelCompute2008}使用以下模型来描述遗忘过程
+% \begin{equation}
+% m_n(t_{1..n}) = \beta + \ln(\sum\limits_{k=1}^n t_k^{-d_k})
+% \end{equation}
+% \begin{equation}
+% p(m) = \frac{1}{1+e^{\frac{\tau-m}{s}}}
+% \end{equation}
+% 其中，$m$是记忆的强度，$\beta$是材料的难度、学习者的能力，$d$是第$k$次复习时的记忆强度衰减率。$\tau$是阈值参数，$s$是控制激活中噪声的影响，描述了回忆对激活变化的敏感性。
 
-\subsection{多尺度上下文模型}[MCM]
+% \subsection{多尺度上下文模型}[MCM]
 
-Pashler等人\cite{pashlerPredictingOptimalSpacing2009}通过结合两种心理学模型。
+% Pashler等人\cite{pashlerPredictingOptimalSpacing2009}通过结合两种心理学模型。
+% \begin{equation}
+%     s_{N}(t)=\sum_{i=1}^{N} \gamma_{i} \exp \left(-\frac{t}{\tau_{i}}\right) x_{i}(0)
+% \end{equation}
+% 其中，$s$是t时刻的记忆强度。
 
-考虑了提取失败的影响，
+% 考虑了提取失败的影响，
 
 \subsection{半衰期回归}[HLR]
 
-正如Settle和Meeder\cite{settlesTrainableSpacedRepetition2016}所描述的那样，随着时间的推移，记忆呈指数衰减：
+Settle和Meeder\cite{settlesTrainableSpacedRepetition2016}提出了记忆半衰期的概念，并用指数函数来刻画回忆概率与时间的关系：
 \begin{equation}
 p = 2^{-\Delta/h}
 \end{equation}
-在这个等式中，$p$表示正确回忆一个项目(例如，一个单词)的概率，它是$\delta$、自上次练习该项目以来的滞后时间和h的函数，$h$是学习者长期记忆中的半衰期或强度度量。
+在这个等式中，$p$表示正确回忆一个项目（例如，一个单词）的概率，它是自上次练习该项目以来的滞后时间$\Delta$的函数，$h$是学习者长期记忆中的半衰期或强度度量。
 
-当$\delta=h$时，滞后时间等于半衰期，因此$p=2^-1=0.5$时，学生处于遗忘的边缘。在这项工作中，我们假设响应只能是二进制的，即正确或不正确。
+当$\Delta=h$时，滞后时间等于半衰期，$p=2^{-1}=0.5$时，学生处于遗忘的边缘。这项工作假设回忆只能是二进制的，即回忆成功或回忆失败。
 
-假设半衰期应随每次重复曝光呈指数增加。估计的半衰期$h^\theta$由下式给出：
+假设半衰期应随每次重复曝光呈指数增加。估计的半衰期$_\theta$由下式给出：
 \begin{equation}
-\hat{h}_{\Theta}=2^{\Theta\cdot x}
+\hat{h}_{\boldsymbol\Theta}=2^{\boldsymbol\Theta \cdot \boldsymbol x}
 \end{equation}
-其中$x$是描述学生-项目对的学习历史的特征向量，并且向量$\theta$包含对应于$x$中的每个特征变量的权重。
+其中$\boldsymbol x$是描述学生-项目对的学习历史的特征向量，并且向量$\boldsymbol \theta$包含对应于$\boldsymbol x$中的每个特征变量的权重。
 
-没有考虑历史复习间隔。
+HLR模型通过机器学习的方式来训练$\boldsymbol \theta$的大小。损失函数为：
+\begin{equation}
+loss=(p-\hat p)^2 + \alpha(h-\hat h)^2 + \lambda||\boldsymbol\theta||^2
+\end{equation}
+
+由于HLR挑选的特征向量只包含统计信息，无法捕捉记忆在时序上的特征。
 
 \section{调度算法}[Algorithms of spaced repetition]
 
-\subsection{皮姆塞勒方法}[Pimsleur Method]\label{sec:pimsleur}
+\subsection{Pimsleur方法}[Pimsleur Method]\label{sec:pimsleur}
 
 Pimsleur提出在外语学习中使用递增间隔进行记忆，并刻画间隔重复下遗忘曲线的变化\cite{pimsleurMemorySchedule1967}。Pimsleur的复习间隔以5为底指数增长，即5秒、25秒、125秒……这套复习间隔与其基于音频的语言学习程序相结合，形成了Pimsleur方法。然而，由于这套复习周期是预先录制的，其无法适应学习者的实际能力和材料的实际难度。例如，一个中国学生可能会非常容易地记住apple，但很难记住archaeology。但在Pimsleur方法中，他必须按照固定的、以相同速度增长的复习间隔来复习这两个单词。
 
-\subsection{莱特纳系统}[Leitner Box]
+\subsection{Leitner系统}[Leitner Box]
 
-Leitner提出了一种基于纸质抽认卡和盒子的间隔重复调度算法——Leitner Box\cite{leitnerLerntManLeben1974}。通过将卡片在代表不同熟练度的盒子之间进行转移，加上为不同盒子安排不同的复习周期，Leitner盒子表现出更强的适应能力。目前依然有不少基于Leitner盒子的间隔重复软件，并对其进行了改进。最常见的Leitner盒子变体是，准备若干个盒子，对应不同的复习间隔，如1天、2天、4天。所有的抽认卡会先放入1天的盒子内容。然后每天学习者需要复习1天盒子内容的卡片，并对每张卡片进行反馈。记住的卡片将会被放入2天的盒子。学习者每两天复习一次2天盒子，每四天复习一次4天盒子。在复习过程中被忘记的卡片将会被放回1天盒子。用同样的例子来说明，\ref{sec:pimsleur}节中的中国学生可能会因为记不住archaeology而将记有该单词的卡片放回1天盒子，相比apple进行更频繁的复习。
+Leitner提出了一种基于纸质抽认卡和盒子的间隔重复调度算法——Leitner盒子\cite{leitnerLerntManLeben1974}。通过将卡片在代表不同熟练度的盒子之间进行转移，加上为不同盒子安排不同的复习周期，Leitner盒子表现出更强的适应能力。目前依然有不少基于Leitner盒子的间隔重复软件，并对其进行了改进。最常见的Leitner盒子变体是，准备若干个盒子，对应不同的复习间隔，如1天、2天、4天。所有的抽认卡会先放入1天的盒子内容。然后每天学习者需要复习1天盒子内容的卡片，并对每张卡片进行反馈。记住的卡片将会被放入2天的盒子。学习者每两天复习一次2天盒子，每四天复习一次4天盒子。在复习过程中被忘记的卡片将会被放回1天盒子。用同样的例子来说明，\ref{sec:pimsleur}节中的中国学生可能会因为记不住archaeology而将记有该单词的卡片放回1天盒子，相比apple进行更频繁的复习。
 
 \subsection{SuperMemo}[SuperMemo]
 
 Wozniak提出了首个运行于计算机的间隔重复算法SM-2\cite{wozniakOptimizationLearning1990}，其通过学习者对记忆的评分来评估电子抽认卡的难易程度，然后基于难易程度和学习者的评分来计算复习间隔。
 
 \begin{algorithm}[htbp]
-    \DontPrintSemicolon
     \KwIn{$g, n ,I, EF$}
     \KwOut{$n, I, EF$}
     \Begin{
@@ -157,17 +165,17 @@ Wozniak提出了首个运行于计算机的间隔重复算法SM-2\cite{wozniakOp
         $I \leftarrow 1$\;
     }
     $EF \leftarrow  EF + (0.1-(5-g)\cdot(0.08+(5-g)\cdot0.02))$\;
-    \uIf{$EF<1.3$}{$EF \leftarrow 1.3$}
+    \uIf{$EF<1.3$}{$EF \leftarrow 1.3$\;}
     }
-    \caption{SM-2}
-    \label{alg:sm-2}
+\caption{SuperMemo 2 算法}
+\label{alg:sm-2}
 \end{algorithm}
 
-SM-2的伪代码如算法\ref{alg:sm-2}所示，其中表示学习者对此次复习的评分，范围为0 ~ 5，大于等于3视为回忆成功。 表示学习者连续回忆成功的次数。 表示学习者复习的间隔。 表示该记忆内容的简易程度。
+SM-2的伪代码如算法\ref{alg:sm-2}所示，其中表示学习者对此次复习的评分，范围为0~5，大于等于3视为回忆成功。$n$表示学习者连续回忆成功的次数。$I$表示学习者复习的间隔。$EF$表示该记忆内容的简易程度。
 
-根据SM-2模型，可以得出一个重复的间隔序列：1天、6天、15天、38天……以此类推。如 果学习者在复习过程中遗忘，间隔将重新从1天 开始。并且由于简易度的下降，新的间隔序列整 体短于上一次的序列，从而让学习者对每张抽认 卡的回忆概率逐步提高，直到学习者能较大概率 回忆起这些抽认卡。
+根据SM-2模型，可以得出一个重复的间隔序列：1天、6天、15天、38天……以此类推。如果学习者在复习过程中遗忘，间隔将重新从1天开始。并且由于简易度的下降，新的间隔序列整 体短于上一次的序列，从而让学习者对每张抽认 卡的回忆概率逐步提高，直到学习者能较大概率 回忆起这些抽认卡。
 
-SM-2模型将学习者的复习间隔和回忆评分作为输入，引入简易度作为中间变量，通过硬编 码的模型计算下一次间隔，实现了对不同抽认卡 的独立跟踪和间隔安排。该模型的优点在于部分考虑了记忆行为的序列特征。其局限性在于，由 于模型是根据经验硬编码的，不能定量地预测学 习者的遗忘情况。并且模型对简易度的迭代调整 较小，导致间隔的收敛速度也较为缓慢。
+SM-2模型将学习者的复习间隔和回忆评分作为输入，引入简易度作为中间变量，通过硬编码的模型计算下一次间隔，实现了对不同抽认卡 的独立跟踪和间隔安排。该模型的优点在于部分考虑了记忆行为的序列特征。其局限性在于，由于模型是根据经验硬编码的，不能定量地预测学 习者的遗忘情况。并且模型对简易度的迭代调整 较小，导致间隔的收敛速度也较为缓慢。
 
 \section{循环神经网络}[Recurrent Neural Network]
 
@@ -177,25 +185,25 @@ SM-2模型将学习者的复习间隔和回忆评分作为输入，引入简易�
 
 在间隔重复中，同一位用户对同一条材料在不同时刻的复习之间是不独立的，循环神经网络正适合用于这种场景。通过输入记忆行为时序数据，循环神经网络可用于预测记忆的状态变化。
 
-一个简单的 RNN 是在一个两层的前馈神经网络中加入一个隐藏层实现的。除了相邻的层之间有连接，隐藏层自身到自身也存在反馈连接。这使得当前时刻的隐藏层状态不仅与当前时刻的输入有关，也与上一时刻的隐藏层状态相关。
+一个简单的RNN是在一个两层的前馈神经网络中加入一个隐藏层实现的。除了相邻的层之间有连接，隐藏层自身到自身也存在反馈连接。这使得当前时刻的隐藏层状态不仅与当前时刻的输入有关，也与上一时刻的隐藏层状态相关。
 
-尽管 RNN 可以学习使用过去的相关信息，但在实践中，它们很难捕获长程依赖关系。为了改善该问题，引入门控机制来控制信息在循环中的积累与遗忘，是一个很好的解决方案。长短期记忆网络和门控循环单元网络是这类方案的常见实现。
+尽管RNN可以学习使用过去的相关信息，但在实践中，它们很难捕获长程依赖关系。为了改善该问题，引入门控机制来控制信息在循环中的积累与遗忘，是一个很好的解决方案。长短期记忆网络\cite{hochreiterLongShortTermMemory1997}和门控循环单元网络\cite{choPropertiesNeuralMachine2014}是这类方案的常见实现。
 
 \subsection{长短时记忆网络}[LSTM]
 
-LSTM 的整体链状结构非常类似于 RNN，但 LSTM 中单元的内部结构比 RNN 中单元的内部结构稍微复杂一些。LSTM 通过引入一个新的内部状态 c 专门进行线性的循环信息传递，同时非线性地输出信息给隐藏层。同时，LSTM 使用门控机制来控制信息传递的路径，包括遗忘门、输入门、输出门，每个门都有各自的用途。遗忘门确定前一存储单元的哪个部分应该被带到下一步，而输入门决定哪些值将被更新。输出门确定单元状态的哪些部分应该提供输出。
+LSTM的整体链状结构非常类似于RNN，但LSTM中单元的内部结构比RNN中单元的内部结构稍微复杂一些。LSTM通过引入一个新的内部状态$c$专门进行线性的循环信息传递，同时非线性地输出信息给隐藏层。同时，LSTM使用门控机制来控制信息传递的路径，包括遗忘门、输入门、输出门，每个门都有各自的用途。遗忘门确定前一存储单元的哪个部分应该被带到下一步，而输入门决定哪些值将被更新。输出门确定单元状态的哪些部分应该提供输出。
 
-在 RNN，隐藏层的状态 h 存储了历史信息，并在每个时刻被更新，因此可以看作一种短期记忆。而神经网络的网络参数隐含了从训练数据中学到的经验，可看作一种长期记忆。在 LSTM 中，记忆单元 c 能够将关键信息保存一定时间，其生命周期长于短期记忆 h，又短于长期记忆，因此 LSTM 能够捕捉长短期记忆。
+在RNN中，隐藏层的状态$h$存储了历史信息，并在每个时刻被更新，因此可以看作一种短期记忆。而神经网络的网络参数隐含了从训练数据中学到的经验，可看作一种长期记忆。在LSTM中，记忆单元$c$能够将关键信息保存一定时间，其生命周期长于短期记忆$h$，又短于长期记忆，因此LSTM能够捕捉长短期记忆。
 
 \subsection{门控循环单元网络}[GRU]
 
-GRU是RNN的另一种类型，也具有门控体系结构。它具有通过将遗忘门和输入门组合而形成的更新门。相比 LSTM，GRU 还有一些额外的变化，如单元状态 c 和隐藏状态 h 的整合。GRU 的结构相比 LSTM 更为简单，同时也改善了 RNN 的长程依赖问题。
+GRU是RNN的另一种类型，也具有门控体系结构。它具有通过将遗忘门和输入门组合而形成的更新门。相比LSTM，GRU还有一些额外的变化，如单元状态$c$和隐藏状态$h$的整合。GRU的结构相比LSTM更为简单，同时也改善了RNN的长程依赖问题。
 
 \section{最优控制}[Optimal control]
 
 \subsection{确定性问题的动态规划}[]
 
-对于一个离散时间的动态系统，每个时刻的系统状态与上一时刻的状态和决策有关。可用一个函数来描述系统动态特性。已知系统初始状态、系统动态特性和决策序列，就可以计算出任意时刻的系统状态变量。
+对于一个离散时间的动态系统，每个时刻的系统状态与上一时刻的状态和决策有关。可用一个函数来描述系统动态特性。已知系统初始状态、系统动态特性和决策序列，就可以计算出任意时刻的系统状态变量\cite[2-4]{bertsekasReinforcementLearningOptimal2019}。
 
 在动态系统的发展过程中，系统的使用者往往有所期待。例如，对于间隔重复系统，学习者希望自己记忆材料付出的时间最少。通过引入代价函数来描述成本与系统状态、决策之间的关系，然后对每个时刻的代价进行累加，可得到总的代价值。描述总代价的函数即确定性问题的目标函数。
 
@@ -205,13 +213,13 @@ GRU是RNN的另一种类型，也具有门控体系结构。它具有通过将�
 
 然而，在间隔重复中，学习者的记忆反馈存在随机性，因此间隔重复系统是一个有随机性的动态系统。
 
-针对具有随机性的动态系统，动态规划将求解一个最优策略而非给出决策量的值。同时，在计算每个状态的最优策略时，随机性问题的目标函数是带期望的。
+针对具有随机性的动态系统，动态规划将求解一个最优策略而非给出决策量的值。同时，在计算每个状态的最优策略时，随机性问题的目标函数是带期望的\cite[14-16]{bertsekasReinforcementLearningOptimal2019}。
 
 \subsection{无限阶段问题的动态规划}[]
 
 考虑到记忆的随机性，无法保证记忆的状态能够在有限阶段内达到学习者期望的目标。因此，该对动态系统进行控制最优化需要考虑无穷多阶段的问题。这要求在动态规划求解过程中，需要遍历所有状态值。
 
-通过使用分布式异步值迭代方法，每次只需要更新一个状态对应的值函数，也能让值函数收敛到最优。
+通过使用分布式异步值迭代方法，每次只需要更新一个状态对应的值函数，也能让值函数收敛到最优\cite[197-200]{bertsekasReinforcementLearningOptimal2019}。
 
 \section{相关工作}[]
 
@@ -219,7 +227,9 @@ GRU是RNN的另一种类型，也具有门控体系结构。它具有通过将�
 
 间隔重复和记忆模型。适应性思维特征-理性模型（ACT-R）\cite{andersonIntegratedTheoryMind2004}是一种认知体系结构，其包含了陈述性记忆模块，假设每次练习会尝试一条幂函数遗忘曲线，多个幂函数近似了间隔重复后的遗忘曲线。而多尺度语境模型（MCM）\cite{pashlerPredictingOptimalSpacing2009}，假设每次练习都会产生一条指数函数遗忘曲线，使用多个指数函数叠加来近似遗忘曲线。半衰期回归模型（HLR）\cite{settlesTrainableSpacedRepetition2016}是一个可训练的间隔重复模型。为了预测学习者对特定材料的记忆半衰期，在线语言学习平台Duolingo的研究者使用他们的用户日志数据进行训练。Ahmed Zaidi 等人\cite{zaidiAdaptiveForgettingCurves2020}在该模型上进行了改进，将神经网络引入了该模型，并考虑了更多心理学、语言学相关的特征。但这些模型没有考虑学习者对单词记忆的反馈顺序和反馈之间的间隔，缺失了时序信息。
 
-用间隔重复模型进行优化调度。为了平衡新材料的学习和已学材料的复习，Reddy等人\cite{reddyUnboundedHumanLearning2016}提出了莱特纳系统\cite{leitnerLerntManLeben1974}的排队网络模型，并设计了一种启发式算法来安排复习。然而，该算法是基于 EFC 模型\cite{reddyUnboundedHumanLearning2016}，将记忆强度作为复习次数和莱特纳箱位置的函数，而不是重复之间的间隔。Tabibian等人\cite{tabibianEnhancingHumanLearning2019}引入了标记的时间点过程来表示间隔的重复，并将调度视为一个最佳控制问题。他们想出了召回概率和评论数量之间的权衡。由于数据集的限制，他们模型中的遗忘率只受召回结果的影响。在Hunziker等人\cite{hunzikerTeachingMultipleConcepts2019}的工作中，优化间隔重复的调度归结为随机序列优化问题。他们设计了一种贪婪的算法来实现学习者保持率最大化的高性能。但该算法实现高效用的充分条件很严格，可能在大多数情况下不适用。最近，强化学习也被应用于优化间隔重复的安排。一些论文\cite{reddyAcceleratingHumanLearning2017,upadhyayDeepReinforcementLearning2018,sinhaUsingDeepReinforcement2019,yangTADSLearningTimeaware2020}通过设计奖励和在模拟环境中的训练，使用RL来最大化学习者的记忆期望。然而，他们的算法所基于的环境过于简化，使得它不能很好地适用于现实世界。除此之外，这些算法缺乏可解释性，在不同的模拟环境中，它们的表现也不尽相同，并不总是优于启发式算法。
+用间隔重复模型进行优化调度。为了平衡新材料的学习和已学材料的复习，Reddy等人\cite{reddyUnboundedHumanLearning2016}提出了Leitner系统\cite{leitnerLerntManLeben1974}的排队网络模型，并设计了一种启发式算法来安排复习。然而，该算法是基于 EFC 模型\cite{reddyUnboundedHumanLearning2016}，将记忆强度作为复习次数和Leitner箱位置的函数，而不是重复之间的间隔。Tabibian等人\cite{tabibianEnhancingHumanLearning2019}引入了标记的时间点过程来表示间隔的重复，并将调度视为一个最佳控制问题。他们想出了召回概率和评论数量之间的权衡。由于数据集的限制，他们模型中的遗忘率只受召回结果的影响。在Hunziker等人\cite{hunzikerTeachingMultipleConcepts2019}的工作中，优化间隔重复的调度归结为随机序列优化问题。他们设计了一种贪婪的算法来实现学习者保持率最大化的高性能。但该算法实现高效用的充分条件很严格，可能在大多数情况下不适用。最近，强化学习也被应用于优化间隔重复的安排。一些论文\cite{reddyAcceleratingHumanLearning2017,upadhyayDeepReinforcementLearning2018,sinhaUsingDeepReinforcement2019,yangTADSLearningTimeaware2020}通过设计奖励和在模拟环境中的训练，使用RL来最大化学习者的记忆期望。然而，他们的算法所基于的环境过于简化，使得它不能很好地适用于现实世界。除此之外，这些算法缺乏可解释性，在不同的模拟环境中，它们的表现也不尽相同，并不总是优于启发式算法。
+
+\section{本章小结}[Summary]
 
 \chapter{方法}[Method]
 
@@ -229,8 +239,10 @@ GRU是RNN的另一种类型，也具有门控体系结构。它具有通过将�
 
 我们收集了墨墨背单词一个月的日志，包含2.2亿条记忆行为数据，以建立一个模型来模拟学习者的记忆。由于以下原因，我们没有使用Duolingo的开源数据集：
 
-- 它缺乏时间序列方面的内容，如反馈和间隔的序列，而我们对数据的分析表明，历史特征对记忆状态有很大的影响。
-- 它的回忆概率定义是有问题的。Duolingo将回忆概率定义为一个单词在特定会话中被正确回忆的次数比例，这意味着同一单词在特定会话中的多次记忆行为是独立的。然而，第一次回忆会影响学习者的记忆状态和全天的后续记忆。
+\begin{itemize}
+    \item 它缺乏时间序列方面的内容，如反馈和间隔的序列，而我们对数据的分析表明，历史特征对记忆状态有很大的影响。
+    \item 它的回忆概率定义是有问题的。Duolingo将回忆概率定义为一个单词在特定会话中被正确回忆的次数比例，这意味着同一单词在特定会话中的多次记忆行为是独立的。然而，第一次回忆会影响学习者的记忆状态和全天的后续记忆。
+\end{itemize}
 
 从墨墨背单词收集的记忆数据记录了学习者对单词记忆的历史信息。对于任意一个记忆行为，我们用一个四元组来表示：
 \begin{equation}
@@ -244,7 +256,21 @@ e_{i} :=(u, l, \boldsymbol{\Delta t_{1:i-1}}, \boldsymbol r_{1:i-1} , \Delta t_i
 \end{equation}
 其中$e_i$表示学习者$u$对单词$l$的第$i$次回忆， $\Delta t$表示两次回忆之间的时间间隔。 $\boldsymbol \Delta t_{1:i-1}$  和$\boldsymbol r_{1:i-1}$分别表示第$1$到第$i-1$回忆的间隔历史和反馈历史。
 
-我们过滤掉其中第一个反馈为$r=1$的日志，以排除学习者在使用间隔重复之前形成的记忆的影响。学习者的记忆行为事件的样本日志见表 1
+\begin{table}[htbp]
+    \caption{Samples of dataset}
+    \label{tab:raw}
+    \vspace{0.5em}\centering\wuhao
+    \begin{tabular}{llllll}
+    \toprule[1.5pt]
+    $u$    & $w$      & $\boldsymbol{\Delta t_{1:i-1}}$ & $\boldsymbol r_{1:i-1}$ & $\Delta t_i$ & $r_i$ \\ 
+    \midrule[1pt]
+    23af1d & solemn   & 0,1,3,1,3,6,10                  & 0,1,0,1,1,1,0           & 1            & 0 \\
+    23af1d & dominate & 0                               & 0                       & 1            & 1 \\
+    e9654e & nursery  & 0,1,1,3,1,3                     & 0,0,1,0,1,1             & 1            & 1 \\ \bottomrule[1.5pt]
+    \end{tabular}
+\end{table}
+
+我们过滤掉其中第一个反馈为$r=1$的日志，以排除学习者在使用间隔重复之前形成的记忆的影响。学习者的记忆行为事件的样本日志见表\ref{tab:raw}。
 
 由此我们得到了包含任意学习者对任意单词的完整记忆行为历史数据。接下来，我们将基于该数据验证两个在间隔重复中发挥重要作用的心理学现象。
 
@@ -254,28 +280,63 @@ e_{i} :=(u, l, \boldsymbol{\Delta t_{1:i-1}}, \boldsymbol r_{1:i-1} , \Delta t_i
 \begin{equation}
 e_{i} :=(l, \boldsymbol{\Delta t}_{1:i-1}, \boldsymbol r_{1:i-1}, \Delta t_i , p_i)
 \end{equation}
-通过控制$w$、$\boldsymbol{\Delta t}_{1:i-1}$和$\boldsymbol r_{1:i-1}$，我们可以绘制每个复习间隔 $\Delta t$ 对应的回忆概率 $p$，从而得到遗忘曲线。当 $N$ 足够大时，比率 $n_{r=1}/N$ 接近回忆概率。然而，墨墨背单词中几乎有10万个词，在不同的时间序列中为每个词收集的行为事件是稀疏的。我们需要对单词进行分组，以便在区分不同的单词和缓解数据稀疏性之间做出权衡。鉴于我们对遗忘曲线感兴趣，材料的难度会明显影响遗忘速度。因此，我们尝试用第一次学习它们后第二天的回忆率作为划分单词难度的标准。图2a描绘了回忆率的分布。
+通过控制$w$、$\boldsymbol{\Delta t}_{1:i-1}$和$\boldsymbol r_{1:i-1}$，我们可以绘制每个复习间隔 $\Delta t$ 对应的回忆概率$p$，从而得到遗忘曲线。当$N$足够大时，比率$n_{r=1}/N$接近回忆概率。然而，墨墨背单词中几乎有10万个词，在不同的时间序列中为每个词收集的行为事件是稀疏的。我们需要对单词进行分组，以便在区分不同的单词和缓解数据稀疏性之间做出权衡。鉴于我们对遗忘曲线感兴趣，材料的难度会明显影响遗忘速度。因此，我们尝试用第一次学习它们后第二天的回忆率作为划分单词难度的标准。图\ref{fig:distribution:p}描绘了回忆率的分布。
 
-我们可以从数据分布中看到，回忆率大多在0.45和0.85之间。为了使分组数据的平衡和密度，将单词分为十个难度组。分组的结果显示在图2和表2中。符号$d$表示难度，数字越大，难度就越大。
+\begin{figure}[htbp]
+    \setlength{\subfigcapskip}{-1bp}
+    \centering
+    \begin{minipage}{\textwidth}
+    \centering
+    \subfigure{\label{fig:distribution:p}}\addtocounter{subfigure}{-2}
+    \subfigure{\subfigure[回忆概率]{\includegraphics[width=0.4\textwidth]{distribution_p}}}
+    \hspace{2em}
+    \subfigure{\label{fig:distribution:d}}\addtocounter{subfigure}{-2}
+    \subfigure{\subfigure[难度]{\includegraphics[width=0.4\textwidth]{distribution_d}}}
+    \end{minipage}
+    \caption{回忆概率和难度的分布}
+    \label{fig:distribution}
+\end{figure}
+
+我们可以从数据分布中看到，回忆率大多在0.45和0.85之间。为了使分组数据的平衡和密度，将单词分为十个难度组。分组的结果显示在图\ref{fig:distribution:d}和表\ref{tab:difficulty}中。符号$d$表示难度，数字越大，难度就越大。
+
+\begin{table}[htbp]
+    \caption{Samples of words' difficulty}
+    \label{tab:difficulty}
+    \vspace{0.5em}\centering\wuhao
+    \begin{tabular}{lllllll}
+    \toprule[1.5pt]
+    $w$          & $d$  & $\boldsymbol{\Delta t}_{1:i-1}$ & $\boldsymbol r_{1:i-1}$& $\Delta t_i$ & $p_i$& $N$ \\ 
+    \midrule[1pt]
+    automobile & 2  & 0          & 0          & 1        & 0.8379    & 7501       \\
+    temper     & 7  & 0          & 0          & 1        & 0.5867    & 7498       \\
+    emission   & 8  & 0          & 0          & 1        & 0.5094    & 7497       \\
+    multiply   & 6  & 0          & 0          & 1        & 0.635     & 7495       \\
+    linger     & 9  & 0          & 0          & 1        & 0.4925    & 7493       \\
+    hatch      & 10 & 0          & 0          & 1        & 0.4371    & 7492       \\ 
+    \bottomrule[1.5pt]
+    \end{tabular}
+\end{table}
 
 因此，分组记忆行为事件可以表示为：
 \begin{equation}
 e_{i} :=(d, \boldsymbol{\Delta t}_{1:i-1}, \boldsymbol r_{1:i-1}, \Delta t_i , p_i)
 \end{equation}
+
 使用聚合后的数据，我们便可以绘制有足够数据支持的遗忘曲线。我们使用指数遗忘曲线模型$p_i = 2^{-\frac{\Delta t_i}{h_i}}$对其进行拟合，并由此得到记忆半衰期$h_i$。
 
-通过此方法，我们将 $\Delta t_i , p_i$ 特征降维得到 $h_i$：
+通过此方法，我们将$\Delta t_i , p_i$特征降维得到$h_i$：
 \begin{equation}
 e_{i} :=(d, \boldsymbol{\Delta t}_{1:i-1}, \boldsymbol r_{1:i-1}, h_i)
 \end{equation}
-此外，将聚合数据得到的回忆概率 $p_i$ 按照时间顺序进行拼接得到回忆概率序列 $\boldsymbol p_{1:i-1}$ 作为特征之一。最终，数据实例为：
+
+此外，将聚合数据得到的回忆概率$p_i$按照时间顺序进行拼接得到回忆概率序列 $\boldsymbol p_{1:i-1}$作为特征之一。最终，数据实例为：
 \begin{equation}
 e_{i}:=(d, \boldsymbol{\Delta t}_{1:i-1}, \boldsymbol r_{1:i-1}, \boldsymbol p_{1:i-1}, h_i)
 \end{equation}
 
-\subsection{模型表示}[Model]
+\subsection{模型表示}[Model]\label{sec:LSTM}
 
-我们采用了最简单 LSTM 网络，一层输入层、一层隐藏层、一层全连接层。网络的输入输出可描述如下：
+我们采用了最简单LSTM 网络，一层输入层、一层隐藏层、一层全连接层。网络的输入输出可描述如下：
 \begin{equation}
 \hat{h_i}=\mathrm{LSTM}(\boldsymbol{\Delta t}_{1:i-1}, \boldsymbol r_{1:i-1}, \boldsymbol p_{1:i-1})
 \end{equation}
@@ -291,17 +352,17 @@ l(e_i,w)=|\frac{h_i-\hat{h_i}}{h}|+C||w||_{2}^{2}
 
 间隔重复方法的目的在于帮助学习者高效地形成长期记忆。而记忆半衰期反映了长期记忆的存储强度，复习次数、每次复习所花费的时间则反映了记忆的成本。所以，间隔重复调度优化的目标可以表述为：在给定记忆成本约束内，尽可能让更多的材料达到目标半衰期，或以最小的记忆成本让一定量的记忆材料达到目标半衰期。其中，后者的问题可以简化为如何以最小的记忆成本让一条记忆材料达到目标半衰期，即最小化记忆成本（Minimize Memorization Cost, MMC）。
 
-我们在 section 3.1.3 所构建的长期记忆模型满足马尔可夫性，每次记忆的状态只取决于上一次的记忆状态和当前的复习输入。其中回忆结果服从一个与复习间隔有关的随机分布。由于半衰期状态转移存在随机性，一条记忆材料达到目标半衰期所需的复习次数是不确定的。因此，间隔重复调度问题可以视作一个无限时间的随机动态规划问题。考虑到优化目标是让记忆半衰期达到目标水平，所以本问题存在终止状态，所以可以转化为一个随机最短路径问题（Stochastic Shortest Path, SSP）。结合优化目标，我们将算法命名为 SSP-MMC。
+我们在\ref{sec:LSTM}节所构建的长期记忆模型满足马尔可夫性，每次记忆的状态只取决于上一次的记忆状态和当前的复习输入。其中回忆结果服从一个与复习间隔有关的随机分布。由于半衰期状态转移存在随机性，一条记忆材料达到目标半衰期所需的复习次数是不确定的。因此，间隔重复调度问题可以视作一个无限时间的随机动态规划问题。考虑到优化目标是让记忆半衰期达到目标水平，所以本问题存在终止状态，所以可以转化为一个随机最短路径问题\cite[177-182]{bertsekasReinforcementLearningOptimal2019}（Stochastic Shortest Path, SSP）。结合优化目标，我们将算法命名为SSP-MMC。
 
 \subsection{状态表示}[State]
 
 为了解决转化为随机最短路径问题的间隔重复最小化记忆成本问题，首先要解决的是如何描述学习者长期记忆的系统动态。
 
-根据 section 3.1.3 的 LSTM 网络，训练好的网络在预测记忆行为序列的记忆半衰期过程中，使用记忆单元和隐藏层来记录当前时刻的状态。根据网络结构，记忆单元和隐藏层的值只依赖于当前时刻的输入值和上一时刻自身的值。如果将记忆单元和隐藏层视作记忆状态，那么记忆状态 $x_k$ 和复习行为 $u_k$ 之间的关系可用马尔可夫决策过程描述。
+根据\ref{sec:LSTM}节的LSTM网络，训练好的网络在预测记忆行为序列的记忆半衰期过程中，使用记忆单元和隐藏层来记录当前时刻的状态。根据网络结构，记忆单元和隐藏层的值只依赖于当前时刻的输入值和上一时刻自身的值。如果将记忆单元和隐藏层视作记忆状态，那么记忆状态$x_k$和复习行为$u_k$之间的关系可用马尔可夫决策过程描述。
 
 记忆状态、复习行为、随机变量以及系统动态可描述如下：
 \begin{equation}
-\boldsymbol x_k = (\boldsymbol c_k,\boldsymbol h_tk)
+\boldsymbol x_k = (\boldsymbol c_k,\boldsymbol h_k)
 \end{equation}
 \begin{equation}
 u_{k}=\Delta t_{k}
@@ -309,12 +370,13 @@ u_{k}=\Delta t_{k}
 \begin{equation}
 \boldsymbol x_{k+1}=\mathrm{LSTM}(\boldsymbol x_k,u_k,r_k)
 \end{equation}
+
 通过引入决策成本和终止状态，可得到下图描述的随机最短路径问题：
 
 \begin{figure}[htpb]
     \centering
     \includegraphics[width = 0.8\textwidth]{ssp}
-    \caption{打高尔夫球的人，硕士论文要求只用汉语}
+    \caption{间隔重复中的随机最短路径问题}
 \end{figure}
 
 如上图所示，圆圈代表了记忆状态，方块是可选的复习行为，虚线箭头表示给定复习行为后的下一个记忆状态和转换概率，实线箭头表示给定记忆状态下可选的复查行为与相应的复习成本。通过计算不同记忆状态对应的记忆半衰期，可得到达到目标半衰期的记忆状态集合。该集合内的记忆状态节点即终止状态。
@@ -323,34 +385,34 @@ u_{k}=\Delta t_{k}
 
 \subsection{算法设计}[Design]
 
-符号约定：
+在SSP-MMC中，有以下符号定义：
 
-- $\boldsymbol x_0$ - 初始状态
-- $\boldsymbol x_{N}$ - 目标状态
-- $\boldsymbol x_{k+1} = \mathrm{LSTM}(\boldsymbol x_k,u_k,r_k)$ - 记忆状态转移方程
-- $g(\boldsymbol x_k,u_k,r_k)$ - 复习代价函数
-  - 为了简化问题，我们只考虑 $r_k$
+\begin{itemize}
+    \item $\boldsymbol x_0$ - 初始状态
+    \item $\boldsymbol x_{N}$ - 目标状态
+    \item $\boldsymbol x_{k+1} = \mathrm{LSTM}(\boldsymbol x_k,u_k,r_k)$ - 记忆状态转移方程
+    \item $g(\boldsymbol x_k,u_k,r_k)$ - 复习代价函数\footnote{为了简化问题，我们只考虑$r_k$}
+    \item $U_k(\boldsymbol x_k)$ - 当前记忆状态下可选的复习行为
+    \item $J_\pi(\boldsymbol x_0)$ - 总复习成本
+\end{itemize}
 
-- $U_k(\boldsymbol x_k)$ - 当前记忆状态下可选的复习行为
-- $J_\pi(\boldsymbol x_0)$ - 总复习成本
-
-SSP-MMC 的 Bellman's equation 如下：
+根据以上符号和马尔可夫决策过程的定义，SSP-MMC的贝尔曼方程可设置如下：
 \begin{equation}
 J(\boldsymbol x_k) = \min\limits_{\Delta u_k \in \Delta U_k(\boldsymbol x_k)} E[g(r_k) + J(\mathrm{LSTM}(\boldsymbol x_k,u_k,r_k))]
 \end{equation}
+
 基于该方程，可以使用动态规划迭代求解，得到每个$x_t$对应的最优复习行为$u_t$。
 
 考虑到$\boldsymbol x_t$的向量值都是连续的，不利于使用矩阵记录状态空间，可以将其离散化：
 \begin{equation}
 \boldsymbol X \xrightarrow[]{(\lfloor \cfrac{\boldsymbol x}{\varepsilon} \rfloor|\boldsymbol x \in \boldsymbol X)} \boldsymbol{\mathrm{X}}
 \end{equation}
-其中，$\varepsilon$表示离散化精度。根据 LSTM 采用$\mathrm{tanh}$作为激活函数，其输出值域为$(-1,1)$，因此离散化后的每一维的离散值是有限的，总计$\lceil\frac{2}{\varepsilon}\rceil$个。
+其中，$\varepsilon$表示离散化精度。根据LSTM 采用$\mathrm{tanh}$作为激活函数，其输出值域为$(-1,1)$，因此离散化后的每一维的离散值是有限的，总计$\lceil\frac{2}{\varepsilon}\rceil$个。
 
 我们可以建立一个成本矩阵$J^{\lceil\frac{2}{\varepsilon}\rceil}$，并将每一项元素初始化为$+\infty$。设置$J[\boldsymbol{\mathrm{x_0}}] = 0$，然后开始遍历每个 $\boldsymbol{\mathrm{x}}$，从 $U(\boldsymbol{\mathrm{x}})$ 中遍历每个$u_k$，计算$p_k$、$\boldsymbol{\mathrm{x}}_{r_k=1}$、$\boldsymbol{\mathrm{x}}_{r_k=0}$，然后使用以下公式：
 \begin{equation}
 J[\boldsymbol{\mathrm{x}}] = \min\limits_{p_k} [p_k \cdot (g(1) + J[\boldsymbol{\mathrm{x}}_{r_k=1}]) + (1-p_k) \cdot (g(0) + J[\boldsymbol{\mathrm{x}}_{r_k=0}])]
 \end{equation}
-
 来迭代更新每个记忆状态对应的最优成本。用一个策略矩阵记录每个状态下最优的复习间隔。最优策略会在一遍遍迭代中收敛。
 
 \section{间隔重复系统架构}[Architecture]
@@ -360,16 +422,18 @@ J[\boldsymbol{\mathrm{x}}] = \min\limits_{p_k} [p_k \cdot (g(1) + J[\boldsymbol{
 \begin{figure}[htpb]
 \centering
 \includegraphics[width = 0.8\textwidth]{framework}
-\caption{打高尔夫球的人，硕士论文要求只用汉语}
+\caption{间隔重复系统架构}
 \end{figure}
 
 上图显示了间隔重复系统的框架，它分为两个主要部分：绿色为本地，红色为远程。
 
 每次用户复习单词时，带有时间序列信息的记忆行为事件将被记录在本地，我们称之为 User Review Logs。在学习者完成当天的所有复习后，这些日志会被上传到远程。
 
-完整的复习日志必须处理大量的写入，需要永久保留，而且一旦写入就不会更新，所以我们使用流式数据服务将日志写入数据仓库。在预处理 ETL 中，我们定期计算所有单词的难度，并汇总 LSTM-HLR 记忆模型所需的训练数据，为 SSP-MMC 调度算法 提供训练环境。
+完整的复习日志必须处理大量的写入，需要永久保留，而且一旦写入就不会更新，所以我们使用流式数据服务将日志写入数据仓库。在预处理 ETL 中，我们定期计算所有单词的难度，并汇总 LSTM-HLR 记忆模型所需的训练数据，为SSP-MMC调度算法 提供训练环境。
 
 在计算出模型参数和最优策略后，远程将相关配置推送到本地。然后本地预测器和调度器将加载新的配置来预测记忆状态，并为用户学习的每个单词安排复习日期。
+
+\section{本章小结}[Summary]
 
 \chapter{实验}[Experiment]
 
@@ -397,19 +461,23 @@ J[\boldsymbol{\mathrm{x}}] = \min\limits_{p_k} [p_k \cdot (g(1) + J[\boldsymbol{
 
 \subsection{复习调度模块}[Review schedule module]
 
-我们将 SSP-MMC 与几个基线调度算法进行对比：
+我们将SSP-MMC与几个基线调度算法进行对比：
 
-- random 策略，每次从$[1,h_N]$中随机选择一个间隔进行安排复习
-- Anki，sm-2 的一种变体，参考其开源的代码。由于anki的算法中，用户的回忆结果是以1-4分输入。我们将回忆失败映射到1分，回忆成功映射到3分。
-- 半衰期，即直接以半衰期作为本次安排的复习间隔。
-- 固定阈值，即当 p 小于等于某一水平（我们使用80\%）时进行复习。
-- Memorize，一种基于最优控制的算法，代码来自于他们开源的仓库。
+\begin{itemize}
+    \item random 策略，每次从$[1,h_N]$中随机选择一个间隔进行安排复习。
+    \item Anki，sm-2 的一种变体，参考其开源的代码。由于anki的算法中，用户的回忆结果是以1-4分输入。我们将回忆失败映射到1分，回忆成功映射到3分。
+    \item 半衰期，即直接以半衰期作为本次安排的复习间隔。
+    \item 固定阈值，即当 p 小于等于某一水平（我们使用80\%）时进行复习。
+    \item Memorize，一种基于最优控制的算法，代码来自于他们开源的仓库。
+\end{itemize}
 
 我们的评价指标包括：
 
-- 达到目标半衰期的记忆数量，当一条item的半衰期超过目标半衰期，该指标+1
-- 累计记忆期望，即学习者所有记忆的item的回忆概率之和。
-- 累计新增的记忆数量，当一条item被加入到学习者的间隔重复调度中，该指标+1
+\begin{itemize}
+    \item 达到目标半衰期的记忆数量（target half-life reached, THR）
+    \item 累计记忆期望，即学习者所有记忆的item的回忆概率之和（summation of recall probability, SRP）
+    \item 累计新增的记忆数量（words total learned, WTL）
+\end{itemize}
 
 \section{实验流程}[Procedure]
 
@@ -417,7 +485,7 @@ J[\boldsymbol{\mathrm{x}}] = \min\limits_{p_k} [p_k \cdot (g(1) + J[\boldsymbol{
 
 首先，我们使用构建好的数据集来训练记忆预测模型，得到 LSTM-HLR。为了确定合适的//todo
 
-然后，训练 SSP-MMC 得到最优复习调度策略，其中 LSTM-HLR 作为状态转移函数调用。最后，我们使用 LSTM-HLR 搭建了一个复习模拟环境，模拟 SSP-MMC 和几个对比算法的复习情况，以评估算法效果。
+然后，训练SSP-MMC得到最优复习调度策略，其中 LSTM-HLR 作为状态转移函数调用。最后，我们使用 LSTM-HLR 搭建了一个复习模拟环境，模拟SSP-MMC和几个对比算法的复习情况，以评估算法效果。
 
 \subsection{训练 LSTM-HLR}[Train LSTM-HLR]
 
@@ -425,7 +493,7 @@ J[\boldsymbol{\mathrm{x}}] = \min\limits_{p_k} [p_k \cdot (g(1) + J[\boldsymbol{
 
 \subsection{选择状态空间维度}[Select dimension of state space]
 
-随着隐藏层节点数量提高，SSP-MMC 的状态空间大小呈指数级增长。由于 SSP-MMC 的训练时间复杂度为$\mathrm O(k\lceil\frac{2}{\varepsilon}\rceil^n)$，如果状态空间的维数过高，SSP-MMC 将无法在合理的时间内计算出结果。因此，研究状态空间维数与预测误差之间的关系，有助于挑选合适的隐藏层节点数量，以在预测精度与训练难度之间取得平衡。
+随着隐藏层节点数量提高，SSP-MMC 的状态空间大小呈指数级增长。由于SSP-MMC的训练时间复杂度为$\mathrm O(k\lceil\frac{2}{\varepsilon}\rceil^n)$，如果状态空间的维数过高，SSP-MMC将无法在合理的时间内计算出结果。因此，研究状态空间维数与预测误差之间的关系，有助于挑选合适的隐藏层节点数量，以在预测精度与训练难度之间取得平衡。
 
 \subsection{训练 SSP-MMC}[Train SSP-MMC]
 
@@ -457,7 +525,7 @@ J[\boldsymbol{\mathrm{x}}] = \min\limits_{p_k} [p_k \cdot (g(1) + J[\boldsymbol{
 
 \subsection{模拟复习}[Stimulate review]
 
-我们设定360天（接近一年）的召回半衰期为目标半衰期，当 item 的半衰期超过这个值时，它将不会被安排复习。然后，考虑到实际场景中学习者每天的学习时间大致恒定，我们设定 600s（10分钟）为每天学习成本的上限。当每次学习和复习过程中的累计成本超过这个上限时，无论是否完成，复习任务都会被推迟到第二天，以确保每种算法在相同的记忆成本下进行比较。我们使用学习者的平均时间，即成功回忆的时间为 3s，失败回忆的时间为 9s。然后，语言学习是一个长期的过程，我们设定模拟时间为1000天。
+我们设定360天（接近一年）的召回半衰期为目标半衰期，当item的半衰期超过这个值时，它将不会被安排复习。然后，考虑到实际场景中学习者每天的学习时间大致恒定，我们设定600秒（10分钟）为每天学习成本的上限。当每次学习和复习过程中的累计成本超过这个上限时，无论是否完成，复习任务都会被推迟到第二天，以确保每种算法在相同的记忆成本下进行比较。我们使用学习者的平均时间，即成功回忆的时间为3秒，失败回忆的时间为9秒。然后，语言学习是一个长期的过程，我们设定模拟时间为1000天。
 
 \subsection{AB测试}[AB test]
 
@@ -495,7 +563,7 @@ J[\boldsymbol{\mathrm{x}}] = \min\limits_{p_k} [p_k \cdot (g(1) + J[\boldsymbol{
     \subfigure{\subfigure[WTL]{\includegraphics[width=0.4\textwidth]{WTL}}}
     \hspace{2em}
     \subfigure{\label{fig:new}}\addtocounter{subfigure}{-2}
-    \subfigure{\subfigure[WTL]{\includegraphics[width=0.4\textwidth]{new}}}
+    \subfigure{\subfigure[NEW]{\includegraphics[width=0.4\textwidth]{new}}}
     \end{minipage}
     \vspace{0.2em}
     \caption{The results of simulation}
@@ -504,16 +572,17 @@ J[\boldsymbol{\mathrm{x}}] = \min\limits_{p_k} [p_k \cdot (g(1) + J[\boldsymbol{
 
 上图中的仿真结果显示，
 
-在 THR 上， SSP-MMC 的表现比所有基线都好，这并不令人惊讶。THR 与 SSP-MMC 的优化目标一致，而且 SSP-MMC 可以达到这个指标的上限。
+在THR上，SSP-MMC的表现比所有基线都好，这并不令人惊讶。THR 与SSP-MMC的优化目标一致，而且SSP-MMC可以达到这个指标的上限。
 
-为了量化每种算法性能之间的相对差异，我们比较了 THR  = 6000 的天数（图中标记为$\star$ ）： SSP-MMC 为 466 天，ANKI 为 569 天，THRESHOLD 为 533 天，而 MEMORIZE 为 793 天。与THRESHOLD 相比，SSP-MMC 节省了 12.6％ 的复习时间。
+为了量化每种算法性能之间的相对差异，我们比较了THR=6000的天数（图中标记为$\star$）：SSP-MMC为466天，ANKI为569天，THRESHOLD为533天，而MEMORIZE为793天。与THRESHOLD相比，SSP-MMC节省了12.6\%的复习时间。
 
-SRP 上的结果与 THR 上的结果相似。这意味着学习者按照 SSP-MMC 的时间表学习会记得最多。
+SRP上的结果与THR上的结果相似。这意味着学习者按照SSP-MMC的时间表学习会记得最多。
 
-在 WTL 上，RANDOM 在早期阶段击败了所有的算法，因为只要调度算法不安排复习，学习者就可以继续学习新的单词，但这是以忘记已经学过的单词为代价的。此外，SSP-MMC 胜过其他基线，因为它将记忆的成本降到最低，给学习者更多的时间来学习新词。
+在WTL上，RANDOM在早期阶段击败了所有的算法，因为只要调度算法不安排复习，学习者就可以继续学习新的单词，但这是以忘记已经学过的单词为代价的。此外，SSP-MMC胜过其他基线，因为它将记忆的成本降到最低，给学习者更多的时间来学习新词。
 
 \section{实际环境}[Stimulate review]
 
+\section{本章小结}[Summary]
 
 \chapter[讨论]{讨论}[Discussion]
 
@@ -532,5 +601,7 @@ SRP 上的结果与 THR 上的结果相似。这意味着学习者按照 SSP-MMC
 从伦理的角度来看，一个令人担忧的问题是，用于训练神经网络和RL的数据应该足够普遍，没有任何形式的偏见。与任何数据驱动的应用程序一样，当有数据时，总是会考虑到数据隐私。如果这些系统被部署到生产中，那么将学生的学习过程保密变得非常重要，这也有助于防止欺凌事件的发生，因为学生需要更长的时间才能掌握概念，因此被取笑。学生在考试中的表现也会影响他们的动机和自尊，因此在教学或复习学生时，设计的系统应该能够考虑到所有这些因素，这变得势在必行。在这项工作中，我们只处理合成数据，所以不存在与数据隐私有关的问题，我们根据之前发表的作品从学生记忆模型中生成数据。另一个重大的伦理问题可能是人工智能从人类手中接过家教工作。但是，发生这种情况的可能性需要很长很长的时间。
 
 它可能会对后人记忆或掌握这些科目有很大的帮助，但要达到这种状态，还需要付出很多努力。例如，人类导师还可以在进行面部表情、回答语气等测试时考虑其他因素，以决定学生是否确定自己的答案。实现类似的目标将意味着要么利用单独的人工智能系统来读取面部表情、语音等，要么使用一个非常复杂的系统来共同完成所有这些任务来做出决定。人类考官还采取措施确保学生在考试时不作弊。另一方面，有时人类导师往往会对某些学生表现出偏见，而这是它无法表现出来的。如果它真的要用来复习学生，我们计划使整个过程自动化，那么我们也必须想出执行上述任务的系统。
+
+\section{本章小结}[Summary]
 
 \section{未来的工作}[Stimulate review]
