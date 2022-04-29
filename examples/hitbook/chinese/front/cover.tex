@@ -59,38 +59,22 @@
   estudenttype={Master of Art},
   %
   % 关键词用“英文逗号”分割
-  ckeywords={间隔重复, 长期记忆, 长短时记忆网络, 最优控制},
-  ekeywords={Spaced Repetition, Long-term Memory, LSTM, Optimal Control},
+  ckeywords={间隔重复, 长期记忆, 长短时记忆网络, 随机最优控制},
+  ekeywords={spaced repetition, long-term memory, LSTM, stochastic optimal control},
 }
 
 \begin{cabstract}
+间隔重复是一种记忆方法，学习者按照给定的复习周期重复记忆，可以有效地形成长期记忆。为了提高记忆效率，间隔重复的调度算法需要对学生的长期记忆进行建模，并优化复习的成本。该文提出了一种间隔重复调度算法，包含了长期记忆预测和复习最优规划两个部分。
 
-摘要的字数（以汉字计），硕士学位论文一般为500 $\sim$ 1000字，博士学位论文为1000 $\sim$ 2000字，
-均以能将规定内容阐述清楚为原则，文字要精练，段落衔接要流畅。摘要页不需写出论文题目。
-英文摘要与中文摘要的内容应完全一致，在语法、用词上应准确无误，语言简练通顺。
-留学生的英文版博士学位论文中应有不少于3000字的“详细中文摘要”。
+在长期记忆预测方面，该文分析了现有的记忆模型预测误差较大的原因为缺乏对记忆行为时序特征的挖掘和利用。通过使用长短时记忆循环神经网络（LSTM）对记忆行为序列进行学习，结合半衰期回归（half-life regression, HLR）模型，相对目前最先进的模型，降低了80\%的预测误差。
 
-  关键词是为了文献标引工作、用以表示全文主要内容信息的单词或术语。关键词不超过 5
-  个，每个关键词中间用分号分隔。（模板作者注：关键词分隔符不用考虑，模板会自动处
-  理。英文关键词同理。）
+在复习最优规划部分，该文对最优化的目标进行了探讨，认为最小化学习者的复习成本是一个有实际意义的指标。通过使用LSTM预测长期记忆的动态变化，该部分构建了一个马尔科夫决策过程，并将最优化问题转化为随机最短路径问题。基于随机动态规划方法，计算得到最优的复习策略。与最先进的方法相比，该策略节省了15.12\%的复习时间。
 \end{cabstract}
 
 \begin{eabstract}
-   An abstract of a dissertation is a summary and extraction of research work
-   and contributions. Included in an abstract should be description of research
-   topic and research objective, brief introduction to methodology and research
-   process, and summarization of conclusion and contributions of the
-   research. An abstract should be characterized by independence and clarity and
-   carry identical information with the dissertation. It should be such that the
-   general idea and major contributions of the dissertation are conveyed without
-   reading the dissertation.
+  Spaced repetition is a memory method in which learners repeat their memories according to a given review cycle, which can effectively form long-term memory. To improve memory efficiency, the scheduling algorithm of spaced repetition needs to model students' long-term memory and optimize the cost of review. This paper proposes a spaced repetition scheduling algorithm that contains two parts: long-term memory prediction and optimal planning for review.
 
-   An abstract should be concise and to the point. It is a misunderstanding to
-   make an abstract an outline of the dissertation and words ``the first
-   chapter'', ``the second chapter'' and the like should be avoided in the
-   abstract.
+  In terms of long-term memory prediction, the paper analyzes that the reason for the large prediction error of existing memory models is the lack of mining and utilization of temporal features of memory behavior. By using long-short term memory recurrent neural network (LSTM) to learn the memory behavior sequences, combined with half-life regression (HLR) model, the prediction error is reduced by 80\% compared with the current state-of-the-art models.
 
-   Key words are terms used in a dissertation for indexing, reflecting core
-   information of the dissertation. An abstract may contain a maximum of 5 key
-   words, with semi-colons used in between to separate one another.
+  In the section on optimal planning for review, the paper explores the goal of optimization and considers minimizing the cost of review for learners as a practically meaningful metric. By using LSTM to predict the dynamics of long-term memory, the section constructs a Markov decision process and transforms the optimization problem into a stochastic shortest path problem. Based on the stochastic dynamic programming method, the optimal review strategy is computed. The strategy saves 15.12\% of the review time compared to the state-of-the-art method.
 \end{eabstract}
