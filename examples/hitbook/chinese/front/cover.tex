@@ -60,7 +60,7 @@
   %
   % 关键词用“英文逗号”分割
   ckeywords={间隔重复, 长期记忆, 长短时记忆网络, 随机最优控制},
-  ekeywords={spaced repetition, long-term memory, LSTM, stochastic optimal control},
+  ekeywords={spaced repetition, long-term memory, long short-term memory recurrent neural network, stochastic optimal control},
 }
 
 \begin{cabstract}
@@ -74,7 +74,7 @@
 \begin{eabstract}
   Spaced repetition is a memory method in which learners repeat their memories according to a given review cycle, which can effectively form long-term memory. To improve memory efficiency, the scheduling algorithm of spaced repetition needs to model students' long-term memory and optimize the cost of review. This paper proposes a spaced repetition scheduling algorithm that contains two parts: long-term memory prediction and optimal planning for review.
 
-  In terms of long-term memory prediction, the paper analyzes that the reason for the large prediction error of existing memory models is the lack of mining and utilization of temporal features of memory behavior. By using long-short term memory recurrent neural network (LSTM) to learn the memory behavior sequences, combined with half-life regression (HLR) model, the prediction error is reduced by 80\% compared with the current state-of-the-art models.
+  In terms of long-term memory prediction, the paper analyzes that the reason for the large prediction error of existing memory models is the lack of mining and utilization of temporal features of memory behavior. By using long short-term memory recurrent neural network (LSTM) to learn the memory behavior sequences, combined with half-life regression (HLR) model, the prediction error is reduced by 80\% compared with the current state-of-the-art models.
 
   In the section on optimal planning for review, the paper explores the goal of optimization and considers minimizing the cost of review for learners as a practically meaningful metric. By using LSTM to predict the dynamics of long-term memory, the section constructs a Markov decision process and transforms the optimization problem into a stochastic shortest path problem. Based on the stochastic dynamic programming method, the optimal review strategy is computed. The strategy saves 15.12\% of the review time compared to the state-of-the-art method.
 \end{eabstract}
