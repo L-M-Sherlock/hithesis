@@ -19,7 +19,7 @@
   %=========
   ctitleone={基于LSTM和间隔重复},%本科生封面使用
   ctitletwo={模型的复习调度算法研究},%本科生封面使用
-  ctitlecover={基于LSTM和间隔重复模型的复习调度算法研究},%放在封面中使用，自由断行
+  ctitlecover={基于LSTM和间隔重复\\模型的复习调度算法研究},%放在封面中使用，自由断行
   ctitle={基于LSTM和间隔重复模型的复习调度算法研究},%放在原创性声明中使用
   csubtitle={一条副标题}, %一般情况没有，可以注释掉
   cxueke={工学},
@@ -30,7 +30,8 @@
   cassosupervisor={某某某教授}, % 副指导老师
   ccosupervisor={某某某教授}, % 联合指导老师
   % 日期自动使用当前时间，若需指定按如下方式修改：
-  %cdate={超新星纪元},
+  cdate={2022年6月},
+  cdatesz={2022年6月2日},
   cstudentid={180110102},
   cstudenttype={学术学位论文}, %非全日制教育申请学位者
   cnumber={no180110102}, %编号
@@ -66,15 +67,19 @@
 \begin{cabstract}
 间隔重复是一种记忆方法，学习者按照给定的复习周期重复记忆，可以有效地形成长期记忆。为了提高记忆效率，间隔重复的调度算法需要对学生的长期记忆进行建模，并优化复习的成本。该文提出了一种间隔重复调度算法，包含了长期记忆预测和复习最优规划两个部分。
 
-在长期记忆预测方面，该文分析了现有的记忆模型预测误差较大的原因为缺乏对记忆行为时序特征的挖掘和利用。通过使用长短时记忆循环神经网络（LSTM）对记忆行为序列进行学习，结合半衰期回归（half-life regression, HLR）模型，相对目前最先进的模型，降低了80\%的预测误差。
+在长期记忆预测方面，该文分析了现有的记忆模型预测误差较大的原因，认为传统模型缺乏对记忆行为时序特征的挖掘和利用。通过使用长短时记忆循环神经网络（LSTM）对记忆行为序列进行学习，结合半衰期回归（half-life regression, HLR）模型，该文提出了LSTM-HLR模型，相对目前最先进的模型，降低了80\%的预测误差。
 
-在复习最优规划部分，该文对最优化的目标进行了探讨，认为最小化学习者的复习成本是一个有实际意义的指标。通过使用LSTM预测长期记忆的动态变化，该部分构建了一个马尔科夫决策过程，并将最优化问题转化为随机最短路径问题。基于随机动态规划方法，计算得到最优的复习策略。与最先进的方法相比，该策略节省了15.12\%的复习时间。
+在复习最优规划部分，该文对最优化的目标进行了探讨，认为最小化学习者的复习成本是一个有实际意义的指标。通过使用LSTM-HLR预测长期记忆的动态变化，该部分构建了一个马尔科夫决策过程，并将最优化问题转化为随机最短路径问题。基于随机动态规划方法，计算得到最优的复习策略SSP-MMC。与最先进的方法相比，SSP-MMC节省了15.12\%的复习时间。
+
+在本项工作过程中，已发表论文《基于LSTM的语言学习长期记忆预测模型》和A Stochastic Shortest Path Algorithm for Optimizing Spaced Repetition Scheduling，分别录用于《中文信息学报》和28TH ACM SIGKDD CONFERENCE。
 \end{cabstract}
 
 \begin{eabstract}
-  Spaced repetition is a memory method in which learners repeat their memories according to a given review cycle, which can effectively form long-term memory. To improve memory efficiency, the scheduling algorithm of spaced repetition needs to model students' long-term memory and optimize the cost of review. This paper proposes a spaced repetition scheduling algorithm that contains two parts: long-term memory prediction and optimal planning for review.
+  Spaced repetition is a memory method in which learners repeat their memories according to a given review cycle, which can effectively form long-term memory. To improve memory efficiency, the scheduling algorithm of spaced repetition needs to model students' long-term memory and optimize review cost. This paper proposes a spaced repetition scheduling algorithm that contains two parts: long-term memory prediction and optimal scheduling for review.
 
-  In terms of long-term memory prediction, the paper analyzes that the reason for the large prediction error of existing memory models is the lack of mining and utilization of temporal features of memory behavior. By using long short-term memory recurrent neural network (LSTM) to learn the memory behavior sequences, combined with half-life regression (HLR) model, the prediction error is reduced by 80\% compared with the current state-of-the-art models.
+  In terms of long-term memory prediction, the paper analyzes that the prediction error of existing memory models is due to the lack of mining and utilization of temporal features of memory behavior. By using long short-term memory recurrent neural network (LSTM) to learn the memory behavior sequences, combined with the half-life regression (HLR) model, we propose the LSTM-HLR model. The prediction error of LSTM-HLR is reduced by 80\% compared with the current state-of-the-art models.
 
-  In the section on optimal planning for review, the paper explores the goal of optimization and considers minimizing the cost of review for learners as a practically meaningful metric. By using LSTM to predict the dynamics of long-term memory, the section constructs a Markov decision process and transforms the optimization problem into a stochastic shortest path problem. Based on the stochastic dynamic programming method, the optimal review strategy is computed. The strategy saves 15.12\% of the review time compared to the state-of-the-art method.
+  In the section on optimal scheduling for review, the paper explores the goal of optimization and considers minimizing the cost of review for learners as a practically meaningful metric. By using LSTM to predict the dynamics of long-term memory, the section constructs a Markov decision process and transforms the optimization problem into a stochastic shortest path problem. The optimal review strategy, namely SSP-MMC, is computed based on the stochastic dynamic programming method. SSP-MMC saves 15.12\% of the review time compared to the state-of-the-art methods.
+
+  During this work, the papers LSTM-based Long-term Memory Prediction Model for Language Learning and A Stochastic Shortest Path Algorithm for Optimizing Spaced Repetition Scheduling have been published and accepted in Journal of Chinese Information Processing and 28TH ACM SIGKDD CONFERENCE.
 \end{eabstract}
